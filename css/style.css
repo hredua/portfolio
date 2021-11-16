@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+/*Redefinindo as configurações do site com seletor global*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em
+}
+
+.menu > ul {
+    display: flex;
+    justify-content: end;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.menu a {
+    color: black;
+    padding: 10px;
+    transition: all 0.4s;
+}
+
+.menu a:hover {
+    font-weight: bold;
+}
+
+.logo img {
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+h1 {
+    text-align: center;
+    color: #10016a;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    max-width: 1200px;
+    min-width: 300px;
+    margin: auto;
+}
+
+.principal > div {
+    padding: 20px;
+    margin-top: 50px;
+}
+.principal img {
+    border: solid 5px black;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.principal p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-contact {
+    min-width: 300px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.galeria {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.foto {
+    position: absolute;
+    opacity: 0;
+    animation: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacao {
+    25% {
+        opacity: 1;
+        transform: scale(1.1,1.1);
+    }
+    
+    50% {
+        opacity: 0;
+    }
+}
+
+.foto:nth-child(1) {
+
+}
+
+.foto:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.foto:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.foto:nth-child(4) {
+    animation-delay: 15s;
+}
+
+.sobre p {
+    text-align: justify;
+    padding: 10px 0;
+    font-size: 0.9em;
+    margin: 0 10px;
+}
+
+.sobre img {
+    width: 100%;
+}
+
+.sobre-mim {
+    max-width: 600px;
+}
+
+.about {
+    max-width: 600px;
+    margin: 50px 10px 0 10px;
+    padding: 10px 0;
+    font-size: 1em;
+}
+
+.cv {
+    display: block;
+    max-width: 400px;
+    padding: 5px 0;
+    background-color: #10016a;
+    text-align: center;
+}
+
+.cv a {
+    color: white;
+}
+
+.cv:hover {
+    background-color: black;
+}
+
+.socialmedia {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.socialmedia > div {
+    padding: 10px;
+}
