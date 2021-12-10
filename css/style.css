@@ -57,15 +57,20 @@ nav {
         overflow-x: hidden;
     }
 
+    a {
+        color: #fff;
+    }
+
     .nav-list {
         position: absolute;
         top: 8vh;
         right: 0;
         width: 50vw;
         height: 92vh;
-        background-color: rgba(255, 255, 255, 0.699);
+        background-color: rgba(0, 0, 0, 0.521);
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
+        border-radius: 5px;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
