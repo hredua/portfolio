@@ -83,6 +83,10 @@ nav {
         margin-right: 0;
     }
 
+    .nav-list li a {
+        padding: 50px;
+    }
+
     .mobile-menu {
         display: block;
     }
@@ -179,10 +183,6 @@ h1 {
     50% {
         opacity: 0;
     }
-}
-
-.foto:nth-child(1) {
-
 }
 
 .foto:nth-child(2) {
