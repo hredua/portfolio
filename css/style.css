@@ -43,6 +43,9 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+    #body.active {
+        position: fixed;
+    }
     #menu {
         display: block;
         position: absolute;
@@ -59,7 +62,7 @@ a:hover {
     }
 
     #nav.active #menu {
-        height: calc(29vh - 70px);
+        height: calc(100vh - 70px);
         visibility: visible;
     }
 
