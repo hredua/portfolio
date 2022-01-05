@@ -8,6 +8,10 @@
     line-height: 1.5em
 }
 
+#body {
+    background-color: #fff;
+}
+
 a {
     color: black;
     text-decoration: none;
