@@ -58,9 +58,6 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-    #body.active {
-        position: fixed;
-    }
     #menu {
         display: block;
         position: absolute;
