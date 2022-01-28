@@ -15,12 +15,12 @@ html, body {
 }
 
 .container {
-    max-width: 1500px;
+    margin: auto;
+    max-width: 1230px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    margin: auto;
 }
 
 a {
@@ -57,82 +57,7 @@ a:hover {
     display: none;
 }
 
-@media (max-width: 600px) {
-    #menu {
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        right: 0;
-        background: #fff;
-        box-shadow: 0px 10px 11px rgba(0, 0, 0, 0.075);
-        transition: all .7s;
-        z-index: 1000;
-        height: 0px;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
-
-    #nav.active #menu {
-        height: calc(100vh - 70px);
-        visibility: visible;
-    }
-
-    #menu a {
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid rgba( 0, 0, 0, .05);
-    }
-
-    #btn-mobile {
-        display: flex;
-        padding: .5rem 1rem;
-        font-size: 1rem;
-        border: none;
-        background: none;
-        cursor: pointer;
-        gap: .5rem;
-    }
-
-    #hamburguer {
-        display: block;
-        border-top: 2px solid;
-        width: 20px;
-    }
-
-    #hamburguer::after, #hamburguer::before {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2px;
-        background: currentColor;
-        margin-top: 5px;
-        transition: .3s;
-        position: relative;
-    }
-
-    #nav.active #hamburguer {
-        border-top-color: transparent;
-    }
-
-    #nav.active #hamburguer::before {
-        transform: rotate(135deg);
-    }
-    #nav.active #hamburguer::after {
-        transform: rotate(-135deg);
-        top: -7px;
-    }
-
-    .card, .back-card {
-        height: 201px !important;
-        width: 350px !important;
-        font-size: 0.9em;
-    }
-}
-
-
 .logo img {
-    margin-top: 5%;
     margin-left: 15%;
 }
 
@@ -188,11 +113,12 @@ h1 {
 }
 
 .back-card button {
+    margin-top: 1rem;
     cursor: pointer;
     border: none;
     background-color: #10016a;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
-    padding: 15px;
+    padding: 8px;
     border-radius: 12px;
     font-size: 1em;
 }
@@ -324,4 +250,82 @@ h1 {
 
 .socialmedia > div {
     padding: 10px;
+}
+
+@media (max-width: 600px) {
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        background: #fff;
+        box-shadow: 0px 10px 11px rgba(0, 0, 0, 0.075);
+        transition: all .7s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba( 0, 0, 0, .05);
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburguer {
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .logo img {
+        margin-left: 1%;
+    }
+
+    .card, .back-card {
+        height: 201px;
+        width: 350px;
+        font-size: 0.9em;
+    }
 }
